@@ -1,6 +1,6 @@
 # tbflingr
 
-Packaged curl for flinging URLs to instances.
+Packaged curl for flinging URLs to Ternbook instances.
 
 ## Install
 
