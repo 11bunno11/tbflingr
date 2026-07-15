@@ -1,2 +1,0 @@
-[console_scripts]
-tbflingr = tbflingr.cli:main
