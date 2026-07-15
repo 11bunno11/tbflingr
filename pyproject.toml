@@ -5,15 +5,21 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tbflingr"
 version = "1.0.0"
+authors = [
+  { name="11bunno11", email="11bunno11@gmail.com" },
+]
 description = "Packaged curl for flinging URLs to instances via /.well-known/ternbook.json"
 requires-python = ">=3.11"
 readme = "README.md"
 long_description_content_type = "text/markdown"
 license = { text = "AGPL-3.0-or-later" }
+dependencies = []
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: GNU Affero General Public License v3",
-    ...
+    "Environment :: Console",
+    "Intended Audience :: Developers :: IndieWeb", 
+    "Topic :: Utilities"
 ]
 
 [project.scripts]
