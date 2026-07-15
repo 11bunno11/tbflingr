@@ -1,6 +1,6 @@
 # tbflingr
 
-Packaged curl for flinging URLs to Ternbook instances.
+A CLI client for registering websites to the Ternbook web directory.
 
 ## Install
 
