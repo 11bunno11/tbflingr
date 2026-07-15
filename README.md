@@ -5,7 +5,7 @@ A CLI client for registering websites to the Ternbook web directory.
 ## Install
 
 ```bash
-pip install .
+pip install tbflingr
 ```
 
 ## Usage
