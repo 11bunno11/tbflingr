@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-tbflingr — Packaged curl for flinging URLs to Ternbook instances.
+tbflingr — Packaged curl for flinging URLs to Ternbook web directory instances.
 
 Usage:
     tbflingr fling <website_url> to <instance_url> [save profile <number>]
@@ -230,7 +230,7 @@ def parse_fling_args(args: list[str]) -> tuple[str, str, int | None]:
 # Entry point
 # ---------------------------------------------------------------------------
 
-HELP = """tbflingr — curl repackaged for Ternbook users
+HELP = """tbflingr — Packaged curl for flinging URLs to Ternbook web directory instances.
 
 Commands:
   fling <website_url> to <instance_url> [save profile <number>]
