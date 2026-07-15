@@ -8,7 +8,12 @@ version = "1.0.0"
 description = "Packaged curl for flinging URLs to instances via /.well-known/ternbook.json"
 requires-python = ">=3.11"
 readme = "README.md"
-license = { text = "AGPL-3.0" }
+license = { text = "AGPL-3.0-or-later" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    ...
+]
 
 [project.scripts]
 tbflingr = "tbflingr.cli:main"
