@@ -15,8 +15,9 @@ license = "AGPL-3.0-or-later"
 dependencies = []
 classifiers = [
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
     "Environment :: Console",
-    "Intended Audience :: Developers :: IndieWeb", 
+    "Intended Audience :: Developers",
     "Topic :: Utilities"
 ]
 
