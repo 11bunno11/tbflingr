@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tbflingr"
+version = "1.0.0"
+description = "Reskinned curl for flinging URLs to instances via /.well-known/ternbook.json"
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.scripts]
+tbflingr = "tbflingr.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tbflingr*"]
