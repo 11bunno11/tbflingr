@@ -8,6 +8,7 @@ version = "1.0.0"
 description = "Packaged curl for flinging URLs to instances via /.well-known/ternbook.json"
 requires-python = ">=3.11"
 readme = "README.md"
+long_description_content_type = "text/markdown"
 license = { text = "AGPL-3.0-or-later" }
 classifiers = [
     "Programming Language :: Python :: 3",
