@@ -257,6 +257,8 @@ Commands:
   help
       Show this message.
 
+  For more information regarding Ternbook, visit https://ternbook.neocities.org
+
 Profiles are stored in ~/.tbflingr/profiles/.
 """
 
