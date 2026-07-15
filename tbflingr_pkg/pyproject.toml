@@ -5,10 +5,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tbflingr"
 version = "1.0.0"
-description = "Reskinned curl for flinging URLs to instances via /.well-known/ternbook.json"
+description = "Packaged curl for flinging URLs to instances via /.well-known/ternbook.json"
 requires-python = ">=3.11"
 readme = "README.md"
-license = { text = "MIT" }
+license = { text = "AGPL-3.0" }
 
 [project.scripts]
 tbflingr = "tbflingr.cli:main"
