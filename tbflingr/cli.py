@@ -26,6 +26,13 @@ WELLKNOWN_PATH = "/.well-known/ternbook.json"
 # URL helpers
 # ---------------------------------------------------------------------------
 
+def ensure_scheme(url: str) -> str:
+    """Prepend https:// if the URL has no scheme."""
+    if not url.startswith("http://") and not url.startswith("https://"):
+        return "https://" + url
+    return url
+
+
 def build_source_url(website_url: str) -> str:
     """Strip trailing slashes and append /.well-known/ternbook.json."""
     return website_url.rstrip("/") + WELLKNOWN_PATH
@@ -100,8 +107,8 @@ def _print_response(body: str) -> None:
 
 def fling(website_url: str, instance_url: str) -> None:
     """Fetch website_url/.well-known/ternbook.json, then POST to instance_url/api/heartbeat."""
-    source_url = build_source_url(website_url)
-    target_url = build_target_url(instance_url)
+    source_url = build_source_url(ensure_scheme(website_url))
+    target_url = build_target_url(ensure_scheme(instance_url))
 
     print(f"  Fetching   {source_url}")
     try:
@@ -230,7 +237,7 @@ def parse_fling_args(args: list[str]) -> tuple[str, str, int | None]:
 # Entry point
 # ---------------------------------------------------------------------------
 
-HELP = """tbflingr — Packaged curl for flinging URLs to Ternbook web directory instances.
+HELP = """tbflingr — Packaged curl for flinging URLs to Ternbook web directory instances
 
 Commands:
   fling <website_url> to <instance_url> [save profile <number>]
